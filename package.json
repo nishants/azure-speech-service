@@ -1,0 +1,13 @@
+{
+  "name": "speech-azure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "nishant <nishant.singh87@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "microsoft-cognitiveservices-speech-sdk": "^1.18.1"
+  }
+}
