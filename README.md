@@ -84,6 +84,13 @@
   
   ```
 
+
+
+- If your sound file is long enough, you will observe that the text is only the first `utterance` in the audio. To transcribe full text, we will need to use events as below : 
+
+  ```
+  ```
+
   
 
 
