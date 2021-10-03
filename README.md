@@ -67,18 +67,20 @@
   const fromFile = () => {
     const audioConfig = sdk.AudioConfig.fromWavFileInput(
       fs.readFileSync("audio/my-audio-file-1.wav"));
-    
+  
     const recognizer = new sdk.SpeechRecognizer(speechConfig, audioConfig);
   
     recognizer.recognizeOnceAsync(result => {
       if(!result.text){
-        console.log(result.privErrorDetails);
+        console.error(result.privErrorDetails);
       }
-      console.log(`RECOGNIZED: Text=${result.text}`);
+      console.log(`Text=${result.text}`);
       recognizer.close();
     });
   }
+  
   fromFile();
+  
   
   ```
 
